@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 :root {
   --primary: #5b3be1;
@@ -521,6 +521,9 @@ li.has-submenu:hover .submenu {
 li.has-third-lev {
     position: relative;
 }
+li.has-submenu:hover .submenu li.has-third-lev:hover img{
+  filter: brightness(190.5) invert(1);
+}
 li.has-submenu:hover .submenu {
     opacity: 1;
     visibility: visible;
@@ -677,6 +680,7 @@ li.has-submenu .submenu li a:hover {
 .mobile-menu  .has-third-lev  .submenu{
     color: #5034d2;
 }
+
 .menu-btn img{
       width: 20px;
     filter: brightness(0) contrast(60) invert(90);
