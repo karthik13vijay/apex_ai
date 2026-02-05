@@ -1,0 +1,1042 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apex AI - Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/images/logo.svg">
+    <link href="./output.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer-min.css">
+
+
+
+</head>
+
+<body class="min-h-screen gradient-mesh">
+
+    <!-- Navigation -->
+    <nav class="fixed z-50 w-full">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-2">
+                    <span class="text-xl font-bold tracking-tight">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </span>
+                </div>
+                <div class="flex items-center gap-5 ">
+                    <ul class="hidden space-x-8 font-medium text-normal lg:flex">
+                        <li>
+                            <a href="#"
+                                class="hover:text-[var(--primary)] transition-colors flex items-center justify-center gap-2">
+                                Products
+                                <span>
+                                    <img src="assets/images/downarrow.svg" alt="img"></span>
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#"
+                                class="hover:text-[var(--primary)] transition-colors flex items-center justify-center gap-2">
+                                Platform <span><img src="assets/images/downarrow.svg" alt="img"></span></a>
+                            <ul class="submenu">
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Providers</a></li>
+                                <li><a href="">Model Catalog</a></li>
+                                <li><a href="">Data Sources</a></li>
+                                <li><a href="">Model Training</a></li>
+                                <li class="has-third-lev">
+                                    <a href="#" class="flex items-center justify-between gap-1">Playground
+                                        <span>
+                                            <img src="assets/images/rightarrow.svg" alt="img">
+                                        </span>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="">Standard</a></li>
+                                        <li><a href="">Pre-Trained</a></li>
+                                        <li><a href="">API</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:text-[var(--primary)] transition-colors flex items-center justify-center gap-2">Solutions
+                                <span><img src="assets/images/downarrow.svg" alt="img"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:text-[var(--primary)] transition-colors flex items-center justify-center gap-2">Company
+                                <span><img src="assets/images/downarrow.svg" alt="img"></span></a>
+                        </li>
+                    </ul>
+                    <div>
+
+                        <button onclick="opencanvas()"
+                            class="p-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-aut menu-btn lg:hidden ">
+                            <img src="assets/images/menu-bar.svg" alt="img">
+                        </button>
+
+
+
+                        <button
+                            class="hidden w-full px-5 py-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-auto shadow-indigo-200 lg:block">
+                            Start free trial
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <button onclick="closeSidebar()" class="close-btn">✕</button>
+
+            <ul class="mobile-menu">
+                <li>
+                    <a href="#">Products</a>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">
+                        Platform
+                        <span>▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Providers</a></li>
+                        <li><a href="#">Model Catalog</a></li>
+
+                        <li class="has-third-lev">
+                            <a href="#" class="submenu-toggle">
+                                Playground
+                                <span>▶</span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">Standard</a></li>
+                                <li><a href="#">Pre-Trained</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Company</a></li>
+            </ul>
+            <button
+                class="w-full px-5 py-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-auto shadow-indigo-200">
+                Start free trial
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 overflow-hidden lg:pt-20 lg:pb-20 hero-section">
+        <!-- Background Circles -->
+        <div class="hero-circle hero-circle-1"></div>
+        <div class="hero-circle hero-circle-2"></div>
+
+        <div class="relative z-10 px-4 pt-32 mx-auto text-center">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8">
+                    Powering the next generation of <br />
+                    <span class="">sovereign AI super agents</span>
+                </h1>
+                <p class="max-w-3xl mx-auto mt-8 text-xl font-normal leading-relaxed text-dark-500 md:text-2xl">
+                    Our proprietary infrastructure and models enable enterprise-grade precision, safety, and full data
+                    sovereignty.
+                </p>
+                <div class="flex flex-col items-center justify-center gap-4 mt-12 sm:flex-row">
+                    <button
+                        class="w-full px-5 py-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-auto shadow-indigo-200">
+                        Contact Us
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Platform Section -->
+    <section class="py-16 md:py-20">
+        <div class="px-4 mx-auto text-center max-w-7xl">
+            <div class="heading-section">
+                <div class="flex items-center justify-center mb-4 space-x-2">
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                    </div>
+
+                    <span class="text-[var(--primary)] font-bold text-xs  tracking-widest">Platform</span>
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                    </div>
+                </div>
+                <h2
+                    class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8 text-center">
+                    The trusted AI platform behind intelligent<br />
+                    <span class=""> industry transformation</span>
+                </h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Workflow orchestration<br>
+                    <span class="text-base font-normal text-gray-700">AI Orchestration</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Model repository<br>
+                    <span class="text-base font-normal text-gray-700">AI Hub</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Insight dashboard<br>
+                    <span class="text-base font-normal text-gray-700"> Unified Viewer</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Multi-modal engine <br>
+                    <span class="text-base font-normal text-gray-700"> Trinity</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Knowledge network<br>
+                    <span class="text-base font-normal text-gray-700">Data Fabric</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Process automation <br>
+                    <span class="text-base font-normal text-gray-700">Digital Process Automation</span>
+                </div>
+                <div
+                    class="px-6 py-3 bg-white border border-gray-100 shadow-sm rounded-xl
+                 text-xl text-[var(--primary)] hover:border-[var(--primary)] cursor-default transition-all font-semibold">
+                    Agent ecosystem <br>
+                    <span class="text-base font-normal text-gray-700">AI Agent Library</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="py-16 md:py-20 bg-slate-50/50">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="heading-section">
+                <div class="flex items-center justify-center mb-4 space-x-2">
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                    </div>
+
+                    <span class="text-[var(--primary)] font-bold text-xs  tracking-widest">Our
+                        Technology Stack</span>
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                    </div>
+                </div>
+
+                <h2
+                    class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8 text-center">
+                    We build secure MSLMs (micro
+                    small language models), deployed on-premise or in your VPC</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Tech Card 1 -->
+                <div class="group texch-box p-8 text-center bg-white border shadow-sm rounded-2xl card-hover border-[var(--border_1)]
+            hover:bg-[linear-gradient(211.88deg,var(--white)_4.01%,var(--primary)_92.5%)]
+            hover:shadow-[var(--card-shadow-2)]
+            hover:scale-105
+            hover:z-10
+            transition-all duration-300">
+                    <div class="flex items-center justify-center mx-auto mb-6 text-3xl ">
+                        <img class="" src="assets/images/icon1.png" alt="img" />
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold">Domain specific AI architecture</h3>
+                </div>
+                <!-- Tech Card 2 (Highlighted) -->
+                <div class="group texch-box p-8 text-center bg-white border shadow-sm rounded-2xl card-hover border-[var(--border_1)]
+            hover:bg-[linear-gradient(211.88deg,var(--white)_4.01%,var(--primary)_92.5%)]
+            hover:shadow-[var(--card-shadow-2)]
+            hover:scale-105
+            hover:z-10
+            transition-all duration-300">
+
+                    <div class="flex items-center justify-center mx-auto mb-6 text-3xl ">
+                        <img class="" src="assets/images/icon2.png" alt="img" />
+
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold">On Device & Edge AI</h3>
+                </div>
+                <!-- Tech Card 3 -->
+                <div class="group texch-box p-8 text-center bg-white border shadow-sm rounded-2xl card-hover border-[var(--border_1)]
+            hover:bg-[linear-gradient(211.88deg,var(--white)_4.01%,var(--primary)_92.5%)]
+            hover:shadow-[var(--card-shadow-2)]
+            hover:scale-105
+            hover:z-10
+            transition-all duration-300">
+                    <div class="flex items-center justify-center mx-auto mb-6 text-3xl ">
+                        <img class="" src="assets/images/icon3.png" alt="img" />
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold text-black group-hover:text-white">Python Agnostic Framework</h3>
+                </div>
+                <!-- Tech Card 4 -->
+                <div class="group texch-box p-8 text-center bg-white border shadow-sm rounded-2xl card-hover border-[var(--border_1)]
+            hover:bg-[linear-gradient(211.88deg,var(--white)_4.01%,var(--primary)_92.5%)]
+            hover:shadow-[var(--card-shadow-2)]
+            hover:scale-105
+            hover:z-10
+            transition-all duration-300">
+                    <div class="flex items-center justify-center mx-auto mb-6 text-3xl">
+                        <img class="" src="assets/images/icon4.png" alt="img" />
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold">Security by Design & Trustless Architecture</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="relative pt-16 pb-0 overflow-hidden bg-white md:pt-20 framework-section">
+
+
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="text-center ">
+                <div class="heading-section">
+                    <div class="flex items-center justify-center mb-4 space-x-2">
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                        </div>
+
+                        <span class="text-[var(--primary)] font-bold text-xs  tracking-widest">Value
+                            Proposition</span>
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                        </div>
+                    </div>
+
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2]  text-center">
+                        Delivering AI solutions with confidence
+                        and precision
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="relative py-16 md:py-20">
+            <div class="framework-bg-1">
+                <img src="assets/images/bg-1.png" alt="img">
+            </div>
+            <div class="framework-bg-2">
+                <img src="assets/images/bg-1.png" alt="img">
+            </div>
+            <div class="px-4 mx-auto max-w-7xl">
+                <div class="swiper cardslider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div
+                                class="p-4 transition-all rounded-sm framework-card hover:bg-white hover:shadow-xl group">
+                                <span class="mb-2 text-6xl font-bold framework-number">1</span>
+                                <h3 class="mb-3 text-lg font-bold leading-snug text-bold">Comprehensive Gen AI Audit
+                                </h3>
+                                <p class="leading-relaxed text-[var(--text-secondary)] text-normal lg:min-h-46">
+                                    Evaluation of your
+                                    current data
+                                    ecosystem and
+                                    identifying security vulnerabilities for LLM readiness.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="p-4 transition-all rounded-sm framework-card hover:bg-white hover:shadow-xl group">
+                                <span class="mb-2 text-6xl font-bold framework-number">2</span>
+                                <h3 class="mb-3 text-lg font-bold leading-snug text-slate-900">Model Tuning &
+                                    Fine-tuning
+                                </h3>
+                                <p class="leading-relaxed text-[var(--text-secondary)] text-normal lg:min-h-46">Adapting
+                                    our
+                                    proprietary
+                                    MSLMs
+                                    to your specific
+                                    industry language and compliance requirements.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="p-4 transition-all rounded-sm framework-card hover:bg-white hover:shadow-xl group">
+                                <span class="mb-2 text-6xl font-bold framework-number">3</span>
+                                <h3 class="mb-3 text-lg font-bold leading-snug text-slate-900">Seamless Integration</h3>
+                                <p class="leading-relaxed text-[var(--text-secondary)] text-normal lg:min-h-46">
+                                    Connecting agents to
+                                    your VPC or
+                                    on-premise
+                                    infrastructure without compromising data sovereignty.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="p-4 transition-all rounded-sm framework-card hover:bg-white hover:shadow-xl group">
+                                <span class="mb-2 text-6xl font-bold framework-number">4</span>
+                                <h3 class="mb-3 text-lg font-bold leading-snug text-slate-900">Testing & Deployment</h3>
+                                <p class="leading-relaxed text-[var(--text-secondary)] text-normal lg:min-h-46">Rigorous
+                                    evaluation
+                                    of
+                                    agent
+                                    performance and safety
+                                    before full-scale autonomous rollout.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="p-4 transition-all rounded-sm framework-card hover:bg-white hover:shadow-xl group">
+                                <span class="mb-2 text-6xl font-bold framework-number">5</span>
+                                <h3 class="mb-3 text-lg font-bold leading-snug text-slate-900">Evolution & Scaling</h3>
+                                <p class="leading-relaxed text-[var(--text-secondary)] text-normal lg:min-h-46">
+                                    Continuous
+                                    monitoring
+                                    and
+                                    reinforcement learning to
+                                    adapt to changing business needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Product Tabs Section -->
+    <section class="py-16 md:py-20 bg-slate-50 tab-slider-sec">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="heading-section">
+                <div class="flex items-center justify-center mb-4 space-x-2">
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                    </div>
+                    <span class="text-xs font-bold tracking-widest text-dark">Our Product
+                        Offerings</span>
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))]  heading-line">
+                    </div>
+                </div>
+                <h2
+                    class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8 text-center">
+
+                    Enhance your performance <br> with technology
+                </h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 ">
+
+                <div thumbsSlider="" class="swiper mainvideoslider">
+                    <div class="grid swiper-wrapper pb-7 md:grid-cols-2 md:gap-2">
+                        <div class="swiper-slide">
+                            <button class="tab-btn px-8 py-3 font-normal text-sm  tracking-wider
+                    border border-[var(--primary)]
+                     text-dark hover:text-[var(--primary)] hover:bg-[var(--primary)]  hover:text-white transition-all 
+                      bg-white">
+                                AI chatbot & virtual <br> assistant
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tab-btn px-8 py-3 font-normal text-sm  tracking-wider
+                    border border-[var(--primary)]
+                     text-dark hover:text-[var(--primary)] hover:bg-[var(--primary)]  hover:text-white transition-all 
+                      bg-white">
+                                AI intelligent <br> document assistance</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tab-btn px-8 py-3 font-normal text-sm  tracking-wider
+                    border border-[var(--primary)]
+                     text-dark hover:text-[var(--primary)] hover:bg-[var(--primary)]  hover:text-white transition-all 
+                      bg-white">
+                                AI powered <br>
+                                decision support</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tab-btn px-8 py-3 font-normal text-sm  tracking-wider
+                    border border-[var(--primary)]
+                     text-dark hover:text-[var(--primary)] hover:bg-[var(--primary)]  hover:text-white transition-all 
+                      bg-white">
+                                AI motor damage <br> assessment</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="swiper tabvideoslider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div class="relative popup-section">
+                                <div class="popup-bg-overlay"></div>
+                                <img src="assets/images/video-1.png" class="popup-banner-img" alt="img" />
+                                <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2"
+                                    data-popup="1">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button>
+
+                                <!-- <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative popup-section">
+                                <div class="popup-bg-overlay"></div>
+                                <img src="assets/images/video-2.png" class="popup-banner-img" alt="img" />
+                                <!-- <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn open-popup-btn2 left-1/2 top-1/2">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button> -->
+                                <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2"
+                                    data-popup="2">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button>
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative popup-section">
+                                <div class="popup-bg-overlay"></div>
+                                <img src="assets/images/video-3.png" class="popup-banner-img" alt="img" />
+                                <!-- <button
+                                    class="open-popup-btn ">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button> -->
+                                <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2"
+                                    data-popup="3">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button>
+
+
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative popup-section">
+                                <div class="popup-bg-overlay"></div>
+                                <img src="assets/images/video-4.png" class="popup-banner-img" alt="img" />
+                                <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button>
+                                <button
+                                    class="absolute z-50 transform -translate-x-1/2 -translate-y-1/2 open-popup-btn left-1/2 top-1/2"
+                                    data-popup="4">
+                                    <img src="assets/images/play.svg" alt="play">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- services Section -->
+    <section class="relative py-16 bg-white md:py-20 services-section">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="mb-16 text-center">
+                <div class="heading-section">
+                    <div class="flex items-center justify-center mb-4 space-x-2">
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                        </div>
+
+                        <span class="text-xs font-bold tracking-widest text-dark">
+                            Our Service Offerings</span>
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                        </div>
+                    </div>
+
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8 text-center">
+                        Transforming possibilities <br> into impact
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div
+                    class="flex flex-col items-start p-8 text-left transition-shadow bg-white border border-[var(--border_2)] shadow-sm rounded-2xl hover:shadow-md">
+                    <div class="flex items-center justify-center w-20 h-20 mb-6 bg-blue-50 rounded-xl">
+                        <span class="w-full">
+                            <img src="assets/images/ser-1.png" class="w-auto h-auto" alt="services1">
+                        </span>
+                    </div>
+                    <h3 class="mb-4 text-xl font-bold leading-tight ">Consulting and managed services</h3>
+                    <p class="leading-relaxed text-[var(--text-secondary)]">
+                        Strategic guidance and hands-on management to optimize your technology investments and drive
+                        measurable business outcomes.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-col items-start p-8 text-left transition-shadow bg-white border border-[var(--border_2)] shadow-sm rounded-2xl hover:shadow-md">
+                    <div class="flex items-center justify-center w-20 h-20 mb-6 bg-blue-50 rounded-xl">
+                        <span class="w-full">
+                            <img src="assets/images/ser-2.png" class="w-auto h-auto" alt="services1">
+                        </span>
+                    </div>
+                    <h3 class="mb-4 text-xl font-bold leading-tight ">Contract and outsourcing</h3>
+                    <p class="leading-relaxed text-[var(--text-secondary)]">
+                        Connect with elite talent and specialized professionals ready to accelerate your projects, drive
+                        innovation, and deliver excellence.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-col items-start p-8 text-left transition-shadow bg-white border border-[var(--border_2)] shadow-sm rounded-2xl hover:shadow-md">
+                    <div class="flex items-center justify-center w-20 h-20 mb-6 bg-blue-50 rounded-xl">
+                        <span class="w-full">
+                            <img src="assets/images/ser-3.png" class="w-auto h-auto" alt="services1">
+                        </span>
+                    </div>
+                    <h3 class="mb-4 text-xl font-bold leading-tight ">Custom application development</h3>
+                    <p class="leading-relaxed text-[var(--text-secondary)]">
+                        Bespoke software solutions crafted to perfection, transforming your unique vision into powerful
+                        digital experiences.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-8 p-8 text-left transition-shadow bg-white border border-[var(--border_2)] shadow-sm md:col-span-3 rounded-2xl md:flex-row hover:shadow-md">
+                    <div class="flex items-center justify-center w-24 h-24 bg-blue-50 rounded-xl shrink-0">
+                        <span class="w-full">
+                            <img src="assets/images/ser-4.png" class="w-auto h-auto" alt="services1">
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-xl font-bold ">AI-native cloud infrastructure</h3>
+                        <p class="leading-relaxed text-[var(--text-secondary)]">
+                            Scalable, secure cloud ecosystems that empower your business to soar beyond limitations and
+                            embrace digital transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mt-12 sm:flex-row">
+                <button
+                    class="w-full px-5 py-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-auto shadow-indigo-200">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Partners Section -->
+    <section class="py-16 border-gray-100 md:py-20 border-y">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="mb-16 text-center">
+                <div class="heading-section">
+                    <div class="flex items-center justify-center mb-4 space-x-2">
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                        </div>
+
+                        <span class="text-xs font-bold tracking-widest text-dark">
+                            Powered by Gobal Innovation Partners</span>
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                        </div>
+                    </div>
+
+                    <p class="mb-10 font-normal tracking-widest text-center text-gray-400  text-[var(--secondary)]">
+                        Collaborating with forward thinking tech pioneers to accelerate the intelligent future.</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-wrap items-center justify-center gap-12 transition-all opacity-50 grayscale hover:grayscale-0">
+                <div class="swiper logoslider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box ">
+                                <img src="assets/images/client1.png" alt="client1">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box">
+                                <img src="assets/images/client2.png" alt="client2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box">
+                                <img src="assets/images/client3.png" alt="client3">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box">
+                                <img src="assets/images/client1.png" alt="client1">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box">
+                                <img src="assets/images/client2.png" alt="client2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="p-4 logoslider-box">
+                                <img src="assets/images/client3.png" alt="client3">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white md:py-20">
+        <div class="px-4 mx-auto text-center max-w-7xl">
+            <div class="mb-16 text-center">
+                <div class="heading-section">
+                    <div class="flex items-center justify-center mb-4 space-x-2">
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,var(--primary),rgba(33,38,45,0))] heading-line">
+                        </div>
+
+                        <span class="text-xs font-bold tracking-widest text-dark">
+                            Our Service Offerings</span>
+                        <div
+                            class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),var(--primary))] heading-line">
+                        </div>
+                    </div>
+
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-dark leading-[1.2] mb-8 text-center">
+                        Transforming possibilities <br> into impact
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+                <div>
+                    <div class="text-5xl font-regular text-dark">
+                        <span class="odometer counter" data-value="90">0</span><span class="percent">%</span>
+                    </div>
+                    <p class="mt-4 font-medium text-gray-600">Efficiency Increase in Model Response</p>
+                </div>
+
+                <div>
+                    <div class="text-5xl font-regular text-dark">
+                        <span class="odometer counter" data-value="80">0</span><span class="percent">%</span>
+                    </div>
+                    <p class="mt-4 font-medium text-gray-600">Reduction in Infrastructure Overhead</p>
+                </div>
+
+                <div>
+                    <div class="text-5xl font-regular text-dark">
+                        <span class="odometer counter" data-value="95">0</span><span class="percent">%</span>
+                    </div>
+                    <p class="mt-4 font-medium text-gray-600">Decision Accuracy for Autonomous Agents</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mt-12 sm:flex-row">
+                <button
+                    class="w-full px-5 py-3 text-lg rounded-md shadow-2xl font-regular btn-primary sm:w-auto shadow-indigo-200">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="px-4 py-16 md:py-20">
+        <div
+            class="max-w-6xl overflow-hidden mx-auto bg-gradient-to-br from-[var(--primary)] to-[#3b27b3] rounded-[2.5rem] p-8 md:p-16 text-white overflow-hidden relative">
+            <div class="absolute bottom-0 left-0 z-0 contact-bg-sec">
+                <img src="assets/images/contact-bg.png" alt="img">
+            </div>
+            <div class="relative z-20 heading-section">
+                <div class="flex items-center justify-center mb-8 space-x-2">
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,white,rgba(33,38,45,0))] heading-line">
+                    </div>
+
+                    <span class="text-xs font-bold tracking-widest text-dark">
+                        Ready to Transform</span>
+                    <div
+                        class="relative w-[50px] h-[2px] bg-[linear-gradient(90deg,rgba(33,38,45,0),white)] heading-line">
+                    </div>
+                </div>
+
+            </div>
+            <div class="relative z-10 flex flex-col gap-12 lg:flex-row">
+                <div class="lg:w-1/2">
+                    <h2 class="mb-10 text-4xl font-bold text-white md:text-5xl">Let's build the future of intelligence
+                        together</h2>
+
+                    <button type="submit" class="w-full font-bold px-5 py-3 text-lg text-[var(--primary)] bg-white rounded-md shadow-2xl font-regular sm:w-auto
+                        ">
+                        Enquire Now
+                    </button>
+                </div>
+                <div class="lg:w-1/2">
+                    <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <input type="text" placeholder="First Name"
+                            class="px-4 py-3 text-white border rounded-lg bg-white/10 border-white/20 placeholder:text-white/50">
+                        <input type="text" placeholder="Last Name"
+                            class="px-4 py-3 text-white border rounded-lg bg-white/10 border-white/20 placeholder:text-white/50">
+                        <input type="email" placeholder="Work Email"
+                            class="px-4 py-3 text-white border rounded-lg md:col-span-2 bg-white/10 border-white/20 placeholder:text-white/50">
+                        <textarea placeholder="How can we help?" rows="3"
+                            class="px-4 py-3 text-white border rounded-lg md:col-span-2 bg-white/10 border-white/20 placeholder:text-white/50"></textarea>
+
+                    </form>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute rounded-full -bottom-20 -right-20 w-80 h-80 bg-white/5 blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative pt-20 pb-10 overflow-hidden bg-white border-t border-gray-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="grid grid-cols-1 gap-12 mb-16 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <div class="flex items-center mb-6 space-x-2">
+
+                        <span class="text-xl font-bold tracking-tight">
+                            <img src="assets/images/logo.svg" alt="img">
+                        </span>
+                    </div>
+                    <p class="mb-6 text-gray-500">Pioneering secure, high-performance LLM infrastructure for the modern
+                        enterprise.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[var(--primary)]">
+
+                            <img src="assets/images/logo-twitter.svg" alt="twitter" class="text-xl">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[var(--primary)]">
+
+                            <img src="assets/images/logo-linkedin.svg" alt="linkedin" class="text-xl"></a>
+                        <a href="#" class="text-gray-400 hover:text-[var(--primary)]">
+                            <img src="assets/images/logo-instagram.svg" alt="instagram" class="text-xl">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[var(--primary)]">
+                            <img src="assets/images/logo-facebook.svg" alt="facebook" class="text-xl">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="mb-6 font-bold">Products</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[var(--primary)]">Al Chatbot & Virtual
+                                Assistant</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">Al Intelligent Document
+                                Assistance</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">Al Powered Decision
+                                Support</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">Al Motor Damage
+                                Assessment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-6 font-bold">Services</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[var(--primary)]">Consulting And Managed
+                                Services</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">Contract And Freelance
+                                Recruiting</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">Custom Application
+                                Development</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)]">IT Cloud Infrastructure</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-6 font-bold">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[var(--primary)] flex items-center gap-2">
+                                <img src="assets/images/fi-rr-phone-call.svg" alt="facebook" class="text-xl">(052)
+                                555-0112</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)] flex items-center gap-2">
+                                <img src="assets/images/fi-rr-envelopes.svg" alt="facebook" class="text-xl">
+                                sales@apexai3.com</a></li>
+                        <li>
+                            <a href="#" class="hover:text-[var(--primary)] flex items-center gap-2">
+                                <img src="assets/images/fi-rr-land-layer-location.svg" alt="facebook" class="text-xl">
+                                1901 Richie Street. Abu Dhabi,
+                                UAE 81063</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center justify-between pt-8 space-y-4 text-xs text-gray-400 border-t border-gray-100 md:flex-row md:space-y-0">
+                <div class="flex space-x-8">
+                    <span>&copy; 2026 Apex A1 3. All rights reserved</span>
+                    <a href="#" class="hover:text-[var(--primary)]">Privacy Policy</a>
+                    <a href="#" class="hover:text-[var(--primary)]">Terms of Service</a>
+                </div>
+                <div>
+                    <div class="flex space-x-8">
+                        <a href="#" class="hover:text-[var(--primary)]">Terms & Condition</a>
+                        <a href="#" class="hover:text-[var(--primary)]">Privacy Policy</a>
+                        <a href="#" class="hover:text-[var(--primary)]">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-12 pt-20 ">
+                <div>
+                    <div class="flex items-center justify-center mt-50">
+
+                        <span class="text-xl font-bold tracking-tight absolute bottom-[-100px]">
+                            <img src="assets/images/footer-logo.png" alt="img">
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <span class="close-symbol" id="closePopup">&times;</span>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <div class="popup-overlay" id="popupOverlay2">
+        <div class="popup">
+            <span class="close-symbol" id="closePopup2">&times;</span>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+
+
+    <!-- Popups -->
+    <div class="popup-overlay" id="popup-1">
+        <button id="close-1">Close</button>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </div>
+    <div class="popup-overlay" id="popup-2">
+        <button id="close-2">Close</button>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </div>
+    <div class="popup-overlay" id="popup-3">
+        <button id="close-3">Close</button>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </div>
+    <div class="popup-overlay" id="popup-4">
+        <button id="close-4">Close</button>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </div>
+
+
+
+
+
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        function opencanvas() {
+            sidebar.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+        }
+
+        document.querySelectorAll('.submenu-toggle').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                e.stopPropagation();
+                btn.parentElement.classList.toggle('open');
+            });
+        });
+
+        sidebar.querySelectorAll('a:not(.submenu-toggle)').forEach(link => {
+            link.addEventListener('click', () => {
+                closeSidebar();
+            });
+        });
+
+
+    </script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- <script src="assets/js/ScrollSmoother.min.js"></script> -->
+    <script src="assets/js/odometer.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        const openBtns = document.querySelectorAll('.open-popup-btn');
+
+        openBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const popupId = btn.dataset.popup;
+                const popupOverlay = document.getElementById(`popup-${popupId}`);
+                const video = popupOverlay.querySelector('video');
+
+                popupOverlay.classList.add('active');
+                video.play();
+
+                // Close button
+                const closeBtn = popupOverlay.querySelector('button[id^="close"]');
+                closeBtn.addEventListener('click', () => {
+                    popupOverlay.classList.remove('active');
+                    video.pause();
+                    video.currentTime = 0;
+                });
+
+                // Close when clicking outside
+                popupOverlay.addEventListener('click', (e) => {
+                    if (e.target === popupOverlay) {
+                        popupOverlay.classList.remove('active');
+                        video.pause();
+                        video.currentTime = 0;
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
